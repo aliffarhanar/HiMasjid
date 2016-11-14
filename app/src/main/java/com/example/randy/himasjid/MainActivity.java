@@ -29,6 +29,51 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageButton btn2 = (ImageButton) findViewById(R.id.buttonMasjidTerdekat);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MasjidTerdekatActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton btn3 = (ImageButton) findViewById(R.id.buttonJadwalSholat);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, JadwalSholatActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton btn4 = (ImageButton) findViewById(R.id.buttonSetting);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SettingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton btn5 = (ImageButton) findViewById(R.id.buttonTentangKami);
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TentangKamiActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton btn6 = (ImageButton) findViewById(R.id.buttonHelp);
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, HelpActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
 
