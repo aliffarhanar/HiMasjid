@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="#ece6ec"
     android:paddingRight="3dp"
     android:scrollbarThumbVertical="@drawable/vertical_bg"
     android:scrollbarTrackVertical="@drawable/vertical_line">

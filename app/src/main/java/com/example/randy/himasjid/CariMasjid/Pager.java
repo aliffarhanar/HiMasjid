@@ -1,44 +1,62 @@
 package com.example.randy.himasjid.CariMasjid;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.example.randy.himasjid.R;
 
 /**
  * Created by Belal on 2/3/2016.
  */
 //Extending FragmentStatePagerAdapter
-public class Pager extends FragmentStatePagerAdapter {
+public class Pager extends AppCompatActivity implements ActionBar.TabListener{
 
-    //integer to count number of tabs
-    int tabCount;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_carimasjid);
+        ActionBar ab = getSupportActionBar();
+        ab.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-    //Constructor to the class
-    public Pager(FragmentManager fm, int tabCount) {
-        super(fm);
-        //Initializing tab count
-        this.tabCount= tabCount;
+
+    // Three tab to display in actionbar
+    ab.addTab(ab.newTab().setText("Tab 1").setTabListener(this));
+    ab.addTab(ab.newTab().setText("Tab 2").setTabListener(this));
+
     }
 
-    //Overriding method getItem
     @Override
-    public Fragment getItem(int position) {
-        //Returning the current tabs
-        switch (position) {
+    public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
+        //Called when a tab is selected
+        int nTabSelected = tab.getPosition();
+        switch (nTabSelected) {
             case 0:
-                Tab1 tab1 = new Tab1();
-                return tab1;
+                setContentView(R.layout.tab1);
+                break;
             case 1:
-                Tab2 tab2 = new Tab2();
-                return tab2;
-            default:
-                return null;
+                setContentView(R.layout.tab1);
+                break;
+            case 2:
+                setContentView(R.layout.tab1);
+                break;
         }
     }
 
-    //Overriden method getCount to get the number of tabs
     @Override
-    public int getCount() {
-        return tabCount;
+    public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
+
+    }
+
+    @Override
+    public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
+
     }
 }

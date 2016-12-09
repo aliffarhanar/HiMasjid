@@ -53,7 +53,6 @@ public class MasjidTerdekatActivity extends FragmentActivity implements Location
 
             Button btnFind = (Button) findViewById(R.id.btn_find);
 
-            // cek google play services
             int status = GooglePlayServicesUtil.isGooglePlayServicesAvailable(getBaseContext());
             if (status != ConnectionResult.SUCCESS) {
                 int requestCode = 10;

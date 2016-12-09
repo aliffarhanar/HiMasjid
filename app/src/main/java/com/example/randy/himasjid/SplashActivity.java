@@ -1,9 +1,11 @@
 package com.example.randy.himasjid;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.multidex.MultiDex;
 
 /**
  * Created by RandyKhairuBasyar on 12/10/2016.
@@ -25,5 +27,9 @@ public class SplashActivity extends Activity {
                 finish();
             }
         }, SPLASH_TIME_OUT);
+    }
+    @Override protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
     }
 }

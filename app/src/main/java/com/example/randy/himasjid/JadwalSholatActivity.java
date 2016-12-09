@@ -22,9 +22,6 @@ public class JadwalSholatActivity extends Activity {
 
     double timezone;
 
-    /* lokasi yg saya gunakan di cimahi
-     * lokasi ini akan menentukan kalkulasi waktu
-     * setiap daerah akan berbeda*/
     double latitude = -6.973434;
     double longitude = 107.635021;
 
@@ -48,14 +45,12 @@ public class JadwalSholatActivity extends Activity {
         mDate		= (TextView) findViewById(R.id.date_value);
         mlayoutDate	= (RelativeLayout) findViewById(R.id.layout_date);
 
-        /* timezone juga mempengaruhi perbedaan waktu
-         * untuk itu timezone sudah di set */
         timezone = (Calendar.getInstance().getTimeZone().getOffset(Calendar.getInstance().getTimeInMillis())) / (1000 * 60 * 60);
 
         prayers	 = new PrayTime();
 
-        prayers.setTimeFormat(prayers.Time24); //format waktu
-        prayers.setCalcMethod(prayers.Makkah); //kalulasi menurut
+        prayers.setTimeFormat(prayers.Time24);
+        prayers.setCalcMethod(prayers.Makkah);
         prayers.setAsrJuristic(prayers.Shafii);
         prayers.setAdjustHighLats(prayers.MidNight);
         prayers.setTimeZone(prayers.getTimeZone());
@@ -63,7 +58,7 @@ public class JadwalSholatActivity extends Activity {
         prayers.setFajrAngle(20.0);
         prayers.setIshaAngle(18.0);
 
-        int[] offsets = { 2, 2, 2, 2, 2, 2, 2 }; // {Fajr,Sunrise,Dhuhr,Asr,Sunset,Maghrib,Isha}
+        int[] offsets = { 2, 2, 2, 2, 2, 2, 2 };
         prayers.tune(offsets);
 
         Calendar cal	= Calendar.getInstance();
@@ -83,10 +78,8 @@ public class JadwalSholatActivity extends Activity {
     }
 
     private void ShowPrayTime(int year, int month, int day) {
-		/* ArrayList ini yang nantinya akan di gunakan untuk
-         * menampilkan jadwal sholat */
+
         ArrayList<String> prayerTimes = prayers.getPrayerTimes(year, month, day, latitude, longitude, timezone);
-//        ArrayList<String> prayerNames = prayers.getTimeNames();
 
         mFajr.setText(prayerTimes.get(0));
         mSunrise.setText(prayerTimes.get(1));

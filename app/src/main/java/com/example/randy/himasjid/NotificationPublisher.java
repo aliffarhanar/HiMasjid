@@ -9,13 +9,15 @@ package com.example.randy.himasjid;
         import android.support.v4.app.NotificationCompat;
         import android.support.v4.app.TaskStackBuilder;
 
+        import com.example.randy.himasjid.notif.SchedulingService;
+
 public class NotificationPublisher extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        Intent notificationIntent = new Intent(context, NotificationActivity.class);
+        Intent notificationIntent = new Intent(context, SchedulingService.class);
 
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(context);
-        stackBuilder.addParentStack(NotificationActivity.class);
+        stackBuilder.addParentStack(SchedulingService.class);
         stackBuilder.addNextIntent(notificationIntent);
 
         PendingIntent pendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
