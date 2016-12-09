@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="station_list_item_logo_padding">6dp</dimen>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDpX_LNF60PGnj_-gdcpHA-mQUWZy-CxPg</string>
+</resources>

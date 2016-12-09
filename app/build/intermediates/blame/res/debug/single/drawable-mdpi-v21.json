@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\ajaj\\backup\\HiMasjid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v21\\ic_menu_directions.png",
+        "source": "D:\\ajaj\\backup\\HiMasjid\\app\\src\\main\\res\\drawable-mdpi-v21\\ic_menu_directions.png"
+    },
+    {
+        "merged": "D:\\ajaj\\backup\\HiMasjid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v21\\ic_menu_favorite_outline.png",
+        "source": "D:\\ajaj\\backup\\HiMasjid\\app\\src\\main\\res\\drawable-mdpi-v21\\ic_menu_favorite_outline.png"
+    },
+    {
+        "merged": "D:\\ajaj\\backup\\HiMasjid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v21\\ic_menu_mapmode.png",
+        "source": "D:\\ajaj\\backup\\HiMasjid\\app\\src\\main\\res\\drawable-mdpi-v21\\ic_menu_mapmode.png"
+    },
+    {
+        "merged": "D:\\ajaj\\backup\\HiMasjid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v21\\ic_menu_search.png",
+        "source": "D:\\ajaj\\backup\\HiMasjid\\app\\src\\main\\res\\drawable-mdpi-v21\\ic_menu_search.png"
+    },
+    {
+        "merged": "D:\\ajaj\\backup\\HiMasjid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v21\\ic_menu_refresh.png",
+        "source": "D:\\ajaj\\backup\\HiMasjid\\app\\src\\main\\res\\drawable-mdpi-v21\\ic_menu_refresh.png"
+    },
+    {
+        "merged": "D:\\ajaj\\backup\\HiMasjid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v21\\ic_menu_mylocation.png",
+        "source": "D:\\ajaj\\backup\\HiMasjid\\app\\src\\main\\res\\drawable-mdpi-v21\\ic_menu_mylocation.png"
+    },
+    {
+        "merged": "D:\\ajaj\\backup\\HiMasjid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v21\\ic_menu_favorite.png",
+        "source": "D:\\ajaj\\backup\\HiMasjid\\app\\src\\main\\res\\drawable-mdpi-v21\\ic_menu_favorite.png"
+    }
+]
