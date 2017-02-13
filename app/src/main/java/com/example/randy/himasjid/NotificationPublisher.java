@@ -24,9 +24,9 @@ public class NotificationPublisher extends BroadcastReceiver {
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
 
-        Notification notification = builder.setContentTitle("Demo App Notification")
-                .setContentText("New Notification From Demo App..")
-                .setTicker("New Message Alert!")
+        Notification notification = builder.setContentTitle("HiMasjid")
+                .setContentText("Waktunya sholat..")
+                .setTicker("Reminder")
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentIntent(pendingIntent).build();
 

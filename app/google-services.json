@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "808695131540",
+    "firebase_url": "https://himasjid-9a30f.firebaseio.com",
+    "project_id": "himasjid-9a30f",
+    "storage_bucket": "himasjid-9a30f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808695131540:android:ce25f27c4493324a",
+        "android_client_info": {
+          "package_name": "com.example.randy.himasjid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808695131540-vot25e8tt1oku137lg26t4b9jjs1p340.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJNlTB0MyJ27GELGZOTlCj2Pi3RsC4LtQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -16,20 +16,29 @@
         android:layout_weight="1"
         class="com.google.android.gms.maps.SupportMapFragment" >
     </fragment>
+
     <TextView
-        android:id="@+id/kota"
+        android:id="@+id/review"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="20dp"
         android:textSize="17sp" />
-    <TextView
-        android:id="@+id/alamat"
+    <EditText
+        android:id="@+id/editTextName"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_riview"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="20dp"
-        android:textSize="17sp" />
+        android:layout_gravity="center_horizontal"
+        android:text="review" />
+
     <Button
         android:id="@+id/btn_direction"
         android:layout_width="wrap_content"
